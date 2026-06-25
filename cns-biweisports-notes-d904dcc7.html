@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>必威体育 · 再访笔记</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f1f3f2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1a1c1b;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      max-width: 820px;
+      width: 100%;
+    }
+
+    /* header / hero 简约 */
+    .hero {
+      margin-bottom: 2.5rem;
+      text-align: left;
+      padding: 1.2rem 0 0.2rem 0;
+      border-bottom: 1px solid #d6d9d7;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1d3a2c;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #5e6b63;
+      border-left: 3px solid #6d8f7a;
+      padding-left: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    /* 卡片组件 */
+    .card {
+      background: #ffffff;
+      border: 1px solid #dfe3e0;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.8rem;
+      transition: box-shadow 0.15s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(55, 75, 60, 0.06);
+    }
+
+    .card p {
+      margin-bottom: 1.1rem;
+    }
+
+    .card p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .quote-line {
+      font-style: normal;
+      background: #f4f7f4;
+      border-left: 4px solid #6d8f7a;
+      padding: 0.9rem 1.4rem;
+      margin: 1.6rem 0 1rem 0;
+      color: #2c3a31;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.98rem;
+    }
+
+    .inline-link {
+      color: #236b44;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b6cfbe;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .inline-link:hover {
+      color: #0f462c;
+      border-bottom-color: #236b44;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 0.8rem;
+      margin-top: 1rem;
+      list-style: none;
+    }
+
+    .tag-list li {
+      background: #eaece9;
+      padding: 0.2rem 1rem 0.25rem 1rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      color: #2e4837;
+      border: 1px solid #d2d8d3;
+    }
+
+    .footer-note {
+      border-top: 1px solid #d9ddd9;
+      margin-top: 2.5rem;
+      padding-top: 1.8rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #5a6a5f;
+    }
+
+    .footer-note small {
+      display: block;
+      margin-top: 0.4rem;
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #1d3a2c;
+      letter-spacing: -0.01em;
+    }
+
+    /* 响应式 */
+    @media (max-width: 560px) {
+      body {
+        padding: 1.2rem 0.9rem;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .card {
+        padding: 1.4rem 1.2rem;
+        border-radius: 16px;
+      }
+
+      .quote-line {
+        padding: 0.7rem 1rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- hero -->
+    <header class="hero">
+      <h1>再访·常读常新</h1>
+      <div class="sub">从收藏到习惯，一个体育资讯聚点的日常</div>
+    </header>
+
+    <!-- 正文卡片1: 再次访问的缘由 -->
+    <article class="card">
+      <p>
+        有时候，一个网站之所以被反复打开，不是因为它做了多少推广，而是因为它恰好填补了某个安静的角落。
+        几个月前我第一次点开 <a href="https://cns-biweisports.com" class="inline-link">必威体育</a>，
+        并没有刻意收藏，只是随手放进了书签栏。之后每隔几天，总会不自觉地再点开看看——页面没有弹窗干扰，赛事信息罗列得清晰，更新也稳定。
+      </p>
+
+      <p>
+        后来我才意识到，这种“平淡的可靠”反而最难得。许多体育类站点要么过于喧闹，要么更新迟缓，
+        而这里保持着一种恰好的节奏：不催促你订阅，不强迫你注册，只是把体育新闻、赛事前瞻和回顾整理好，放在那里。
+        久而久之，它成了我浏览器里一个安静的锚点。
+      </p>
+    </article>
+
+    <!-- 引用提示区块  -->
+    <div class="quote-line">
+      “我常常想，一个值得再次访问的网站，应该像一本可以反复翻阅的笔记——每一次打开，都有熟悉的骨架，和新鲜的细节。”
+    </div>
+
+    <!-- 卡片2: 收藏与持续关注 -->
+    <article class="card">
+      <h2>收藏之外，持续关注的逻辑</h2>
+      <p>
+        收藏夹里的链接很多，但真正会每周点开的，往往只有两三个。<a href="https://cns-biweisports.com" class="inline-link">必威体育</a>
+        是其中之一。原因并不复杂：内容分类足够细，从足球、篮球到小众项目都有独立板块；文章观点克制，不刻意煽动情绪；
+        而且页面加载快，移动端适配也自然——习惯一旦养成，就不想再换。
+      </p>
+
+      <p>
+        持续关注某个站点，本质上是对编辑筛选能力的信任。这里没有标题党式的惊叹号，
+        也没有反复弹窗的会员引导，只是安静地把深度内容与即时比分区分开，读者可以各取所需。
+        我尤其喜欢那种“赛前分析带数据、赛后复盘带视角”的写法，看得出撰稿人的积累。
+      </p>
+
+      <!-- 附加小标签，体现内容颗粒度 -->
+      <ul class="tag-list" aria-label="常见内容标签">
+        <li>赛事前瞻</li>
+        <li>赛后复盘</li>
+        <li>数据洞察</li>
+        <li>转会专栏</li>
+        <li>青训观察</li>
+      </ul>
+    </article>
+
+    <!-- 卡片3: 一点对“习惯”的叙述 -->
+    <article class="card">
+      <p>
+        如今打开浏览器，在地址栏输入 memorized 的字母，已经变成一种无意识动作。不需要书签，不需要搜索，
+        直接输入那几个字母，回车，就到了熟悉的页面。这种“肌肉记忆”式的访问，比任何收藏都牢固。
+        也许这就是好内容的力量——它让你忘记自己是在“访问一个网站”，而是感觉“回到了一个地方”。
+      </p>
+
+      <p>
+        如果你也喜欢那种不张扬、但一直保持质量的体育内容聚合，不妨也试着把
+        <a href="https://cns-biweisports.com" class="inline-link">必威体育</a> 放进收藏夹，
+        给它几次“再访”的机会。也许过段时间再回头看，你也会发现自己已经习惯了它的存在。
+      </p>
+    </article>
+
+    <!-- 简短的 faq 摘要（非传统faq，更接近随笔式结尾）-->
+    <div class="card" style="background: #fafbfa;">
+      <p style="font-size: 0.95rem; color: #3b4d40;">
+        <strong style="font-weight: 500;">对于新读者：</strong>
+        内容更新通常在北京时间傍晚和重要赛赛后。没有广告弹窗，也没有限时阅读的催促。
+        你可以随意浏览，也可以慢慢细读某篇专题。
+      </p>
+      <p style="font-size: 0.95rem; color: #3b4d40; margin-top: 0.5rem;">
+        <strong style="font-weight: 500;">对于老访客：</strong>
+        收藏夹里的链接不必清理，只要它还在你的“常去”列表里，就不会错过任何一期内容。
+      </p>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-note">
+      <span>— 随记 · 再访多次后 —</span>
+      <small>一份安静的体育阅读笔记，页面生成于浅灰底色。</small>
+    </footer>
+  </div>
+</body>
+</html>
